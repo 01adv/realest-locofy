@@ -7,6 +7,7 @@ import RentPropertiesContainer from "../components/rent-properties-container";
 import RentPropertiesForm from "../components/rent-properties-form";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import PropertiesGridView from "./properties";
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const LandingPage = () => {
         <RentPropertiesForm />
         <Contact />
         <Footer/>
+        {/* <PropertiesGridView/> */}
       </div>
     </>
   );

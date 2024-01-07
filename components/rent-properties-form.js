@@ -1,9 +1,10 @@
+import Link from "antd/lib/typography/Link";
 import PropertyRentCard from "./property-rent-card";
 
 const RentPropertiesForm = () => {
   return (
     <div className="self-stretch flex flex-col items-center justify-start py-[86px] px-0 gap-[39px] text-center text-21xl text-primary-800 font-body-regular-600">
-      <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%]">
+      <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-100%">
         <div className="w-[688px] flex flex-col items-center justify-start gap-[24px] max-w-[95%] lg:max-w-[95%] md:self-stretch md:w-auto">
           <div className="self-stretch relative leading-[48px] font-semibold">
             Latest Properties of Rent
@@ -23,7 +24,7 @@ const RentPropertiesForm = () => {
       </div>
       <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start hover:bg-royalblue sm:max-w-full">
         <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
-          Load more listing
+          Load More Listing
         </div>
       </button>
     </div>

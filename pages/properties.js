@@ -6,7 +6,7 @@ import PropertiesGridContainer from "../components/properties-grid-container";
 import Footer from "../components/footer";
 
 
-const defaultOrder = []
+const defaultOrder = ['default order']
 
 const PropertiesGridView = () => {
   return (
@@ -38,9 +38,9 @@ const PropertiesGridView = () => {
                 src="/squaresfour@2x.png"
               />
             </div>
-            <div className="leading-[24px]">Sort by:</div>
-            <Dropdown
-              menu={{ item: defaultOrder }}
+            {/* <div className="leading-[24px]">Sort by:</div> */}
+            {/* <Dropdown
+              // menu={defaultOrder.length ? Menu.Items(defaultOrder) : null}
               placement="bottomLeft"
               trigger={["hover"]}
             >
@@ -48,7 +48,7 @@ const PropertiesGridView = () => {
                 {`Default Order `}
                 <DownOutlined />
               </a>
-            </Dropdown>
+            </Dropdown> */}
           </div>
         </div>
         <PropertiesGridContainer />

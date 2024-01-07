@@ -3,7 +3,7 @@ import PropertyCard from "./property-card";
 const RentPropertiesContainer = () => {
   return (
     <div className="self-stretch flex flex-col items-center justify-start py-[86px] px-0 gap-[39px] text-center text-21xl text-primary-800 font-body-regular-600">
-      <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%] md:pl-[60px] md:pr-[60px] md:box-border">
+      <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[100%] md:pl-[60px] md:pr-[60px] md:box-border">
         <div className="w-[688px] flex flex-col items-center justify-start gap-[24px] max-w-[95%] lg:max-w-[95%] md:self-stretch md:w-auto">
           <div className="self-stretch relative leading-[48px] font-semibold">
             Latest Properties of Rent
