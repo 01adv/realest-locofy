@@ -7,7 +7,7 @@ const Hero = () => {
   const router = useRouter();
 
   const onSearchCTAClick = () => {
-    router.push("/");
+    router.push("/properties");
   };
 
   return (

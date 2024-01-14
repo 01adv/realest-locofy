@@ -1,121 +1,22 @@
-import PropertyCard from "./property-card";
+import PropertyCard from './property-card'
 
-const PropertiesGridContainer = () => {
+const PropertiesGridContainer = ({ allproperties }) => {
   return (
-    <div className="self-stretch flex flex-row flex-wrap items-start justify-center text-left text-mini-5 text-gray-700 font-body-regular-600">
-      <div className="flex-1 shrink-0 flex flex-row flex-wrap items-start justify-center gap-[8px]">
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
-        <PropertyCard
-          imageDimensions="/property-image@2x.png"
-          imageDimensionsText="/car@2x.png"
-          imageDimensionsArray="/bathtub@2x.png"
-          imageDimensionsText2="/arrowsout@2x.png"
-          imageDimensionsTextArray="/ellipse-1@2x.png"
-          imageDimensionsTextArray2="/sharenetwork@2x.png"
-          imageDimensionsTextArray3="/heart@2x.png"
-          imageDimensionsTextArray4="/plus@2x.png"
-          propWidth="350px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propMaxWidth="unset"
-        />
+    <div className='self-stretch flex flex-row flex-wrap items-start justify-center text-left text-mini-5 text-gray-700 font-body-regular-600'>
+      <div className='flex-1 flex flex-row flex-wrap items-start justify-center gap-[12px] px-2.5'>
+        {allproperties.map(property => (
+          <PropertyCard
+            key={property.id}
+            imgUrl={property.image}
+            name={property.name}
+            price={property.price}
+          />
+        ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PropertiesGridContainer;
+export default PropertiesGridContainer
+
+
